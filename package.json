@@ -1,0 +1,87 @@
+{
+  "name": "easelint",
+  "author": "Gabriel Santerre <gab@100terres.com>",
+  "maintainers": [
+    "Gabriel Santerre <gab@100terres.com>"
+  ],
+  "contributors": [],
+  "license": "MIT",
+  "description": "A modern ESlint configuration for JavaScript, TypeScript and React that includes the Airbnb style guide, jsx-a11y to help with accessibility and Pettier to do some code formatting.",
+  "homepage": "https://github.com/100terres/easelint#readme",
+  "version": "0.0.0",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "internal/*",
+    "js.js",
+    "jsx.js",
+    "ts.js",
+    "tsx.js"
+  ],
+  "keywords": [
+    "eslint",
+    "prettier",
+    "javascript",
+    "typescript",
+    "react",
+    "jsx-a11y"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/100terres/easelint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/100terres/easelint/issues"
+  },
+  "scripts": {
+    "commit": "cz",
+    "lint": "eslint .",
+    "prepare": "husky install",
+    "release": "release-it",
+    "test": "npm run lint"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^2.0.0",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "typescript": "^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "confusing-browser-globals": "^1.0.11",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.4.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "16.2.1",
+    "@commitlint/config-conventional": "16.2.1",
+    "@commitlint/cz-commitlint": "16.2.1",
+    "@release-it/conventional-changelog": "4.2.0",
+    "@types/react": "17.0.39",
+    "commitizen": "4.2.4",
+    "eslint": "8.10.0",
+    "husky": "7.0.4",
+    "prettier": "2.5.1",
+    "prop-types": "15.8.1",
+    "react": "17.0.2",
+    "release-it": "14.12.5",
+    "typescript": "4.6.2"
+  }
+}
