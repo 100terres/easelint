@@ -39,7 +39,7 @@
     "lint": "eslint .",
     "prepare": "husky install",
     "release": "release-it",
-    "test": "npm run lint"
+    "test": "pnpm run lint"
   },
   "peerDependencies": {
     "eslint": "^8.0.0",

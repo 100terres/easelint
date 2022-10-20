@@ -2,7 +2,7 @@
 
 module.exports = {
   hooks: {
-    "before:init": ["npm test"],
+    "before:init": ["pnpm test"],
   },
   git: {
     commitMessage: "chore: release ${version}",
