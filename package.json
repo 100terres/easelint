@@ -13,11 +13,7 @@
     "LICENSE",
     "README.md",
     "index.js",
-    "internal/*",
-    "js.js",
-    "jsx.js",
-    "ts.js",
-    "tsx.js"
+    "src/*"
   ],
   "keywords": [
     "eslint",
@@ -56,6 +52,7 @@
     }
   },
   "dependencies": {
+    "@potloc/spready": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
     "confusing-browser-globals": "^1.0.11",

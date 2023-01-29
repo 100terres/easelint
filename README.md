@@ -49,41 +49,23 @@ Using any [file formats](https://eslint.org/docs/user-guide/configuring/configur
 #### Using the full configuration with JavaScript, TypeScript and React
 
 ```js
-module.exports = {
-  "extends": ["100terres"],
-};
-```
-#### JavaScript config
+const easelint = require('easelint');
 
-```js
-module.exports = {
-  "extends": ["100terres/js"],
-};
-```
-#### JavaScript with React config
+module.exports = easelint({
+  javascript: true,
+  typescript: true,
 
-```js
-module.exports = {
-  "extends": ["100terres/js", "100terres/jsx"],
-};
-```
-#### TypeScript config
+  // we currently only support React
+  jsxPragma: 'react',
 
-```js
-module.exports = {
-  "extends": ["100terres/ts"],
-};
-```
-#### TypeScript with React config
+  eslint: {
+    // any eslint configuration
+  },
+});
 
-```js
-module.exports = {
-  "extends": ["100terres/ts", "100terres/tsx"],
-};
 ```
 
 Voilà! Your project now uses a linter.
-
 
 ## How to Contribute 🤝
 
