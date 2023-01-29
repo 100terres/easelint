@@ -49,17 +49,25 @@ Using any [file formats](https://eslint.org/docs/user-guide/configuring/configur
 #### Using the full configuration with JavaScript, TypeScript and React
 
 ```js
-const easelint = require('easelint');
+const easelint = require("easelint");
 
 module.exports = easelint({
   javascript: true,
   typescript: true,
 
   // we currently only support React
-  jsxPragma: 'react',
+  jsxPragma: "react",
 
   eslint: {
-    // any eslint configuration
+    // any eslint configuration e.g.
+    overrides: [
+      {
+        files: ["vite.config.ts"],
+        rules: {
+          "import/no-extraneous-dependencies": "off",
+        },
+      },
+    ],
   },
 });
 
