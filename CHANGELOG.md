@@ -1,5 +1,12 @@
 undefined
 
+### [0.2.1](https://github.com/100terres/easelint/compare/v0.2.0...v0.2.1) (2023-01-29)
+
+
+### Docs 📃
+
+* update installation example ([805ecb3](https://github.com/100terres/easelint/commit/805ecb3c758ad03b6886d41cef94c0ec49d52ed1))undefined
+
 ## [0.2.0](https://github.com/100terres/easelint/compare/v0.1.0...v0.2.0) (2023-01-29)
 
 
