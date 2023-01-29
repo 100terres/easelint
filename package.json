@@ -8,7 +8,7 @@
   "license": "MIT",
   "description": "A modern ESlint configuration for JavaScript, TypeScript and React that includes the Airbnb style guide, jsx-a11y to help with accessibility and Pettier to do some code formatting.",
   "homepage": "https://github.com/100terres/easelint#readme",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "files": [
     "LICENSE",
     "README.md",
