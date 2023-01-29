@@ -1,4 +1,8 @@
-module.exports = {
-  root: true,
-  extends: require.resolve("../../js"),
-};
+const easelint = require("../../index");
+
+module.exports = easelint({
+  javascript: true,
+  eslint: {
+    root: true,
+  },
+});
