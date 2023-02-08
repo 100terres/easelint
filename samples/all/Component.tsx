@@ -1,13 +1,15 @@
 import React from "react";
 
-import Image from "./Image";
+import { Image } from "./Image";
 
 export interface ComponentProps {
   className?: string;
   children?: React.ReactNode;
 }
 
-const Component: React.VoidFunctionComponent<ComponentProps> = (props) => {
+export const Component: React.VoidFunctionComponent<ComponentProps> = (
+  props
+) => {
   const { className, children } = props;
 
   return (
@@ -31,5 +33,3 @@ Component.defaultProps = {
   className: undefined,
   children: null,
 };
-
-export default Component;

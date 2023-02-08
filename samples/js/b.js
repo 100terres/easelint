@@ -1,6 +1,6 @@
-import a, { e } from "./a";
+import { a, e } from "./a";
 
-export default function b() {
+export function b() {
   a(1, 2, 3);
 
   e();

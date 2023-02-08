@@ -5,7 +5,7 @@ export interface ComponentProps {
   className?: string;
 }
 
-const Component: React.FunctionComponent<ComponentProps> = (props) => {
+export const Component: React.FunctionComponent<ComponentProps> = (props) => {
   const { className, children } = props;
 
   return (
@@ -28,5 +28,3 @@ const Component: React.FunctionComponent<ComponentProps> = (props) => {
 Component.defaultProps = {
   className: undefined,
 };
-
-export default Component;

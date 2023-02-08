@@ -17,6 +17,13 @@ module.exports = {
     "arrow-body-style": "off",
     "prefer-arrow-callback": "off",
 
+    // Prefer named exports over default exports
+    // https://humanwhocodes.com/blog/2019/01/stop-using-default-exports-javascript-module/
+    // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/prefer-default-export.md
+    // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-default-export.md
+    "import/prefer-default-export": "off",
+    "import/no-default-export": "error",
+
     // https://github.com/benmosher/eslint-plugin-import/tree/master/docs/rules
     "import/extensions": [
       "error",

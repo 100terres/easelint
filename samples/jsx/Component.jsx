@@ -2,7 +2,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-const Component = (props) => {
+export const Component = (props) => {
   const { className, children } = props;
 
   return (
@@ -31,5 +31,3 @@ Component.propTypes = {
   className: PropTypes.string,
   children: PropTypes.element,
 };
-
-export default Component;
